@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER STYLES STARTS HERE*/
+.header {
+    height: 100vh;
+    background-image: url(../images/backgrounds/desk.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* LOGO STYLES STARTS HERE */
+.logo-container img{
+    position: absolute;
+    width: 50px;
+    position: fixed;
+    top: 45px;
+    left: 45px;
+    z-index: 3;
+}
+
+/* SOCIAL MEDIA ICONS STYLES STARTS HERE */
+.social-media-container-content {
+    position: absolute;
+    position: fixed;
+    top: 220px;
+    left: 69px;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+
+.social-media-icons ul{
+    font-size: 25px;
+    line-height: 0;
+    list-style-type: none;
+}
+
+.social-media-icons li {
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.social-media-icons i {
+    color: #596d3d;
+    font-weight: 200;
+}
+
+/* NAV STYLES START HERE */
+.navigation-container {
+    position: absolute;
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navigation-container-content {
+    float: right;
+    padding: 10px;
+    margin: 0 30px 15px 15px;
+    background-color: #596d3d;
+    border-radius: 0 0 20px 20px;
+}
+
+.navigation-container-content a{
+    color: #c47830;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+/* HEADING STARTS HERE */
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 75px;
+    color: #c47830;
+}
+
+.heading-subsection {
+    letter-spacing: 5px;
+}
+
+.scrolling {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.scrolling a, a:visited {
+    color: #c47830;
+}
+
+.icon-display {
+    text-align: center;
+}
+
+.icon-display i{
+    font-size: 50px;
+}
+/* HEADER STYLES ENDS HERE*/
+
+/* PROJECT SECTION STARTS HERE */
+
+.project-container {
+    background-image: url(../images/backgrounds/grid2.png);
+    background-size: 248px;
+    background-repeat: repeat;
+}
+
+.project-heading-container {
+    position: relative;
+    height: 275px;
+    width: 100%;
+}
+
+.project-heading h2 {
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 25px auto;
+    padding: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 75px;
+    line-height: 65px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    color: #c47830;
+    position: absolute;
+}
+
+.pen-icon-display {
+    position: absolute;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pen-icon-display i{
+    font-size: 50px;
+    color: #596d3d;
+}
+.project-content-top{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+
+.flex-item img{
+    width: 315px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 315px;
+    width: 315px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s;
+    background-position: center;
+    background-size: 315px;
+    display: flex;
+}
+
+.item-1:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/letter-f.jpg);
+}
+
+.item-2:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/neurobook.jpg);
+}
+
+.item-3:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/montreal-map2.png);
+}
+
+.item-4:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/ramen.jpg);
+}
+
+.item-5:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/cba.png);
+}
+
+.item-6:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/chrysanthemum.jpg);
+}
+
+.project-container-footer {
+    height: 150px;
+    width: 100%;
+    position: relative;
+}
+
+.project-container-footer a {
+    color: #596d3d;
+    font-size: 35px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    left: 50%;
+    top: 35%;
+    transform: translate(-50%,-50%);
+
+}
+
+.project-container-footer a:hover {
+    color: #c47830;
+}
+
+/* PROJECT SECTION ENDS HERE */
+
+/* CV STYLES STARTS HERE*/
+
+.cv-container {
+    height: 100vh;
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cv-heading-container {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    margin:auto;
+    display: block;
+}
+
+.cv-heading h2 {
+    margin: 50px;
+    padding: 50px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 75px;
+    line-height: 65px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    color: #c47830;
+    text-align: center;
+}
+
+.briefcase-icon-display {
+    text-align: center;
+}
+
+.briefcase-icon-display i{
+    font-size: 50px;
+    color: #596d3d;
+}
+
+.left-container {
+    position: relative;
+}
+
+.professional-photo img {
+    position:absolute;
+    top: 100px;
+    left: 10%;
+    border-radius: 50%;
+    width: 300px;
+}
+
+.professional-info {
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+
+.professional-info p {
+    top: 170px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    text-align: right;
+}
+
+.about-me-blurb {
+    position: absolute;
+    top: 650px;
+    left: 385px;
+    transform: translate(-100%, 0);
+    max-width: 265px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c47830;
+}
+
+.skills-content {
+    position: absolute;
+    top: 800px;
+    left: 115px;
+}
+
+.skills-content p {
+    padding: 5px 0;
+}
+
+.skills-indent {
+    margin-left: 15px;
+}
+
+.right-container {
+    position: relative;
+    top: 125px;
+}
+
+.header-name h1{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.work-experience {
+    position: absolute;
+    text-align: right;
+    top: 210px;
+    right: 100px;
+}
+
+.work-experience h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #c47830;
+}
+
+.company-title {
+    margin: 30px 0 0 0;
+    font-size: 18px;
+}
+
+.section-title {
+    margin-top: 20px;
+}
+
+.work-experience-content p {
+    line-height: 28px;
+}
+
+.work-experience-content a, .work-experience-content a:visited {
+    text-decoration: none;
+    font-style: italic;
+    color: #c47830;
+    display: block;
+}
+
+.work-experience-content a:hover {
+    color: #596d3d ;
+}
+
+.bottom-spacing {
+    height: 100px;
+}
+/* CV STYLES ENDS HERE*/

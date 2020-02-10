@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER STYLES STARTS HERE*/
+.header {
+    height: 350px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+/* LOGO STYLES STARTS HERE */
+.logo-container img{
+    position: absolute;
+    width: 50px;
+    position: fixed;
+    top: 45px;
+    left: 45px;
+    z-index: 3;
+}
+
+/* SOCIAL MEDIA ICONS STYLES STARTS HERE */
+.social-media-container-content {
+    position: absolute;
+    position: fixed;
+    top: 220px;
+    left: 69px;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+
+.social-media-icons ul{
+    font-size: 25px;
+    line-height: 0;
+    list-style-type: none;
+}
+
+.social-media-icons li {
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.social-media-icons i {
+    color: #596d3d;
+    font-weight: 200;
+}
+
+/* NAV STYLES STARTS HERE*/
+.navigation-container {
+    position: absolute;
+    position: fixed;
+    display: block;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.navigation-container-content {
+    float: right;
+    padding: 10px;
+    margin: 0 30px 15px 15px;
+    background-color: #596d3d;
+    border-radius: 0 0 20px 20px;
+}
+
+.navigation-container-content a{
+    color: #c47830;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+ .active-page a{
+    color: white;
+}
+
+/* PROJECT HEADER STYLES START HERE */
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main-heading {
+    font-size: 75px;
+    color: #c47830;
+
+}
+.heading-subsection {
+    letter-spacing: 5px;
+    color: #c47830;
+}
+
+.icon-display {
+    position: absolute;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-display i{
+    font-size: 50px;
+    color: #596d3d;
+}
+
+/* PROJECT SECTION STARTS HERE */
+
+.project-content-top{
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.flex-item {
+    display: flex;
+    align-items: center;
+}
+
+.flex-item img{
+    width: 315px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9 {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    margin:auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 315px;
+    width: 315px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: .5s;
+    background-position: center;
+    background-size: 315px;
+    display: flex;
+}
+
+.item-1:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/letter-f.jpg);
+}
+
+.item-2:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/neurobook.jpg);
+}
+
+.item-7:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/montreal-map2.png);
+}
+
+.item-4:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/ramen.jpg);
+}
+
+.item-5:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/queenandslim.jpg);
+}
+
+.item-6:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/chrysanthemum.jpg);
+}
+
+.item-3:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/cba.png);
+}
+
+.item-8:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/table.jpg);
+}
+
+.item-9:hover .image-overlay{
+    opacity: 1;
+    background-image: url(../images/hover/witchcraft2.jpg);
+}

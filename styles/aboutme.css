@@ -1,0 +1,200 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER STYLES STARTS HERE*/
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+/* LOGO STYLES */
+.logo-container img{
+    position: absolute;
+    width: 50px;
+    position: fixed;
+    top: 45px;
+    left: 45px;
+    z-index: 3;
+}
+
+/* SOCIAL MEDIA ICONS STYLES STARTS HERE */
+.social-media-container-content {
+    position: absolute;
+    position: fixed;
+    top: 220px;
+    left: 69px;
+    transform: translate(-50%,-50%);
+    z-index: 3;
+}
+
+.social-media-icons ul{
+    font-size: 25px;
+    line-height: 0;
+    list-style-type: none;
+}
+
+.social-media-icons li {
+    padding: 5px;
+    margin-bottom: 25px;
+}
+
+.social-media-icons i {
+    color: #596d3d;
+    font-weight: 200;
+}
+
+/* NAV STYLES */
+.navigation-container {
+    position: absolute;
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 2;
+}
+
+.navigation-container-content {
+    float: right;
+    padding: 10px;
+    margin: 0 30px 15px 15px;
+    background-color: #596d3d;
+    border-radius: 0 0 20px 20px;
+}
+
+.navigation-container-content a{
+    color: #c47830;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 5px 5px;
+    margin: 10px;
+}
+
+.active-page a{
+    color: white;
+}
+
+/* CV STYLES STARTS HERE*/
+
+.cv-container {
+    height: auto;
+    max-width: 1100px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* LEFT CONTAINER STARTS HERE */
+
+.left-container {
+    position: relative;
+}
+
+.professional-photo img {
+    position:absolute;
+    top: 100px;
+    left: 10%;
+    border-radius: 50%;
+    width: 300px;
+}
+
+.professional-info {
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+
+.professional-info p {
+    top: 170px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    text-align: right;
+}
+
+.about-me-blurb {
+    position: absolute;
+    top: 650px;
+    left: 385px;
+    transform: translate(-100%, 0);
+    max-width: 265px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c47830;
+}
+
+.skills-content {
+    position: absolute;
+    top: 800px;
+    left: 115px;
+}
+
+.skills-content p {
+    padding: 5px 0;
+}
+
+.skills-indent {
+    margin-left: 15px;
+}
+
+/* RIGHT CONTAINER STARTS HERE */
+
+.right-container {
+    position: relative;
+    top: 100px;
+}
+
+.header-name h1{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 60px;
+}
+
+.work-experience {
+    position: absolute;
+    text-align: right;
+    top: 210px;
+    right: 100px;
+}
+
+.work-experience h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #c47830;
+}
+
+.company-title {
+    margin: 30px 0 0 0;
+    font-size: 18px;
+}
+
+.section-title {
+    margin-top: 20px;
+}
+
+.work-experience-content p {
+    line-height: 28px;
+}
+
+.work-experience-content a, .work-experience-content a:visited {
+    text-decoration: none;
+    font-style: italic;
+    color: #c47830;
+    display: block;
+}
+
+.work-experience-content a:hover {
+    color: #596d3d ;
+}
+
+.bottom-spacing {
+    height: 100px;
+}
+
+/* CV STYLES ENDS HERE*/
