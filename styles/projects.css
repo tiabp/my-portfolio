@@ -75,6 +75,12 @@
     margin: 10px;
 }
 
+.navigation-container-content img {
+    height: 24px;
+    vertical-align: bottom;
+    padding: 0 0 4px 0;
+}
+
  .active-page a{
     color: white;
 }
@@ -113,27 +119,33 @@
 
 /* PROJECT SECTION STARTS HERE */
 
+.project-container {
+    height: 100%;
+}
+
 .project-content-top{
     position: relative;
-    height: 50vh;
-    width: 100%;
-    margin-top: 20px;
+    height: 100%;
+    width: 90%;
+    margin:auto;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .flex-item {
     display: flex;
     align-items: center;
+
 }
 
 .flex-item img{
     width: 315px;
     border-radius: 50%;
-    margin: 15px;
+    padding: 20px 0;
+    margin: 30px;
 }
 
 .item-1, .item-2, .item-3, .item-4, .item-5, .item-6, .item-7, .item-8, .item-9 {
@@ -167,9 +179,9 @@
     background-image: url(../images/hover/neurobook.jpg);
 }
 
-.item-7:hover .image-overlay{
+.item-3:hover .image-overlay{
     opacity: 1;
-    background-image: url(../images/hover/montreal-map2.png);
+    background-image: url(../images/hover/cba.png);
 }
 
 .item-4:hover .image-overlay{
@@ -179,7 +191,7 @@
 
 .item-5:hover .image-overlay{
     opacity: 1;
-    background-image: url(../images/hover/queenandslim.jpg);
+    background-image: url(../images/hover/montreal-map2.png);
 }
 
 .item-6:hover .image-overlay{
@@ -187,9 +199,9 @@
     background-image: url(../images/hover/chrysanthemum.jpg);
 }
 
-.item-3:hover .image-overlay{
+.item-7:hover .image-overlay{
     opacity: 1;
-    background-image: url(../images/hover/cba.png);
+    background-image: url(../images/hover/queenandslim.jpg);
 }
 
 .item-8:hover .image-overlay{
