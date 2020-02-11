@@ -79,6 +79,12 @@
     margin: 10px;
 }
 
+.navigation-container-content img {
+    height: 24px;
+    vertical-align: bottom;
+    padding: 0 0 4px 0;
+}
+
 /* HEADING STARTS HERE */
 .heading {
     position: absolute;
@@ -123,6 +129,7 @@
     background-image: url(../images/backgrounds/grid2.png);
     background-size: 248px;
     background-repeat: repeat;
+    height: 100%;
 }
 
 .project-heading-container {
@@ -158,11 +165,14 @@
     font-size: 50px;
     color: #596d3d;
 }
+
+/* PROJECT SECTION STARTS HERE */
+
 .project-content-top{
     position: relative;
-    height: 50vh;
-    width: 100%;
-    margin-top: 10px;
+    height: 100%;
+    width: 80%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -173,6 +183,7 @@
 .flex-item {
     display: flex;
     align-items: center;
+    margin: 15px 0;
 }
 
 .flex-item img{
@@ -214,7 +225,7 @@
 
 .item-3:hover .image-overlay{
     opacity: 1;
-    background-image: url(../images/hover/montreal-map2.png);
+    background-image: url(../images/hover/cba.png);
 }
 
 .item-4:hover .image-overlay{
@@ -224,7 +235,7 @@
 
 .item-5:hover .image-overlay{
     opacity: 1;
-    background-image: url(../images/hover/cba.png);
+    background-image: url(../images/hover/montreal-map2.png);
 }
 
 .item-6:hover .image-overlay{
@@ -245,9 +256,8 @@
     font-weight: 400;
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%,-50%);
-
 }
 
 .project-container-footer a:hover {
@@ -401,3 +411,176 @@
     height: 100px;
 }
 /* CV STYLES ENDS HERE*/
+
+/* Apply media query on screens smaller than 720px */
+@media screen and (max-width: 770px) {
+    /* decrease project circle width on smaller screens */
+   
+    /* HEADER MEDIA QUERY STARTS HERE */
+    .header {
+        background-image: url(../images/backgrounds/desk-ipad.jpg);
+    }
+
+    /* HEADING MEDIA QUERY STARTS HERE */
+    .main-heading {
+        width:700px;
+}
+
+    .heading-subsection {
+        letter-spacing: 6px;
+        font-size: 14px;
+}
+
+/* PROJECT SECTION MEDIA QUERY STARTS HERE */
+
+.flex-item img{
+    width: 400px;
+}
+
+.image-overlay {
+    height: 400px;
+    width: 400px;
+}
+
+/* CV STYLES MEDIA QUERY STARTS HERE*/
+
+.cv-heading-container {
+    position: relative;
+    height: 250px;
+    width: 100%;
+    margin:auto;
+    display: block;
+}
+
+.cv-heading h2 {
+    margin: 50px;
+    padding: 50px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 75px;
+    line-height: 65px;
+    letter-spacing: 10px;
+    font-weight: 400;
+    color: #c47830;
+    text-align: center;
+}
+
+.briefcase-icon-display {
+    text-align: center;
+}
+
+.briefcase-icon-display i{
+    font-size: 50px;
+    color: #596d3d;
+}
+
+.left-container {
+    position: relative;
+}
+
+.professional-photo img {
+    position:absolute;
+    top: 100px;
+    left: 10%;
+    border-radius: 50%;
+    width: 300px;
+}
+
+.professional-info {
+    position: absolute;
+    top: 450px;
+    left: 150px;
+}
+
+.professional-info p {
+    top: 170px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    text-align: right;
+}
+
+.about-me-blurb {
+    position: absolute;
+    top: 650px;
+    left: 385px;
+    transform: translate(-100%, 0);
+    max-width: 265px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: 400;
+    color: #c47830;
+}
+
+.skills-content {
+    position: absolute;
+    top: 800px;
+    left: 115px;
+}
+
+.skills-content p {
+    padding: 5px 0;
+}
+
+.skills-indent {
+    margin-left: 15px;
+}
+
+.right-container {
+    position: relative;
+    top: 125px;
+}
+
+.header-name h1{
+    position: absolute;
+    top: 80px;
+    right: 100px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.work-experience {
+    position: absolute;
+    text-align: right;
+    top: 210px;
+    right: 100px;
+}
+
+.work-experience h2 {
+    font-size: 30px;
+    font-weight: 400;
+    color: #c47830;
+}
+
+.company-title {
+    margin: 30px 0 0 0;
+    font-size: 18px;
+}
+
+.section-title {
+    margin-top: 20px;
+}
+
+.work-experience-content p {
+    line-height: 28px;
+}
+
+.work-experience-content a, .work-experience-content a:visited {
+    text-decoration: none;
+    font-style: italic;
+    color: #c47830;
+    display: block;
+}
+
+.work-experience-content a:hover {
+    color: #596d3d ;
+}
+
+.bottom-spacing {
+    height: 100px;
+}
+/* CV STYLES ENDS HERE*/
+
+
+}
+  
