@@ -73,6 +73,12 @@
     margin: 10px;
 }
 
+.navigation-container-content img {
+    height: 24px;
+    vertical-align: bottom;
+    padding: 0 0 4px 0;
+}
+
 .active-page a{
     color: white;
 }
