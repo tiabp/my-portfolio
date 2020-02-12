@@ -209,7 +209,7 @@
     opacity: 0;
     transition: .5s;
     background-position: center;
-    background-size: 315px;
+    background-size: cover;
     display: flex;
 }
 
@@ -269,7 +269,7 @@
 /* CV STYLES STARTS HERE*/
 
 .cv-container {
-    height: 100vh;
+    height: 100%;
     max-width: 1100px;
     margin: auto;
     font-family: 'Poppins', sans-serif;
@@ -277,7 +277,7 @@
 
 .cv-heading-container {
     position: relative;
-    height: 350px;
+    height: 200px;
     width: 100%;
     margin:auto;
     display: block;
@@ -322,6 +322,10 @@
     left: 150px;
 }
 
+.media-query {
+    display: none;
+}
+
 .professional-info p {
     top: 170px;
     font-size: 14px;
@@ -346,6 +350,10 @@
     position: absolute;
     top: 800px;
     left: 115px;
+}
+
+.skills-content h2 {
+    color: #c47830;
 }
 
 .skills-content p {
@@ -424,6 +432,7 @@
     /* HEADING MEDIA QUERY STARTS HERE */
     .main-heading {
         width:700px;
+        font-size: 55px;
 }
 
     .heading-subsection {
@@ -440,121 +449,100 @@
 .image-overlay {
     height: 400px;
     width: 400px;
+    background-size: cover;
 }
 
 /* CV STYLES MEDIA QUERY STARTS HERE*/
 
 .cv-heading-container {
-    position: relative;
-    height: 250px;
-    width: 100%;
-    margin:auto;
-    display: block;
+    height: 225px;
 }
 
 .cv-heading h2 {
-    margin: 50px;
-    padding: 50px 0 0 0;
-    font-family: 'Poppins', sans-serif;
-    font-size: 75px;
-    line-height: 65px;
-    letter-spacing: 10px;
-    font-weight: 400;
-    color: #c47830;
-    text-align: center;
-}
-
-.briefcase-icon-display {
-    text-align: center;
-}
-
-.briefcase-icon-display i{
     font-size: 50px;
-    color: #596d3d;
 }
 
 .left-container {
-    position: relative;
+    width: 80%;
+    margin: auto;
+}
+
+.professional-photo {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
 }
 
 .professional-photo img {
-    position:absolute;
-    top: 100px;
-    left: 10%;
-    border-radius: 50%;
-    width: 300px;
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 200px;
 }
 
 .professional-info {
-    position: absolute;
-    top: 450px;
-    left: 150px;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    top: 400px;
+    text-align: center;
+    left: 20%;
+}
+
+.media-query {
+    display: block;
 }
 
 .professional-info p {
-    top: 170px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    line-height: 28px;
-    text-align: right;
+    letter-spacing: 1px;
+    line-height: 24px;
+    width: 100%;
+    height: 30px;
+    text-align: left;
 }
 
 .about-me-blurb {
-    position: absolute;
-    top: 650px;
-    left: 385px;
-    transform: translate(-100%, 0);
-    max-width: 265px;
-    text-align: right;
-    font-size: 18px;
-    font-weight: 400;
-    color: #c47830;
+    top: 580px;
+    left: 60%;
+    transform: translate(-20%, 0);
+    width: 220px;
+    font-size: 16px;
 }
 
 .skills-content {
-    position: absolute;
-    top: 800px;
-    left: 115px;
+    top: 700px;
+    left: 20%;
 }
 
-.skills-content p {
-    padding: 5px 0;
+.skills-content h2 {
+    font-weight: 500 ;
 }
 
 .skills-indent {
-    margin-left: 15px;
+    margin-left: 30px;
 }
 
 .right-container {
-    position: relative;
-    top: 125px;
+    display: ;
 }
 
 .header-name h1{
-    position: absolute;
-    top: 80px;
-    right: 100px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-size: 50px;
+    display: none;
 }
 
 .work-experience {
-    position: absolute;
-    text-align: right;
-    top: 210px;
-    right: 100px;
+    top: 550px;
+    right: 18%;
 }
 
 .work-experience h2 {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 400;
-    color: #c47830;
 }
 
 .company-title {
-    margin: 30px 0 0 0;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .section-title {
@@ -579,8 +567,5 @@
 .bottom-spacing {
     height: 100px;
 }
-/* CV STYLES ENDS HERE*/
-
-
 }
   
