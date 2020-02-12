@@ -205,3 +205,38 @@
 .footer-space {
     height: 0px;
 }
+
+/* Apply media query on screens smaller than 720px */
+@media screen and (max-width: 770px) {
+    /* decrease project circle width on smaller screens */
+
+.main-heading {
+    margin-top: 100px;
+    font-size: 50px;
+}
+.heading-subsection {
+    letter-spacing: 3px;
+    width: 63%;
+    margin:auto;
+    color: #c47830;
+    text-transform: uppercase;
+}
+
+.heading-subsection a {
+    text-decoration: none;
+    color: #596d3d;
+}
+
+.icon-display {
+    position: absolute;
+    text-align: center;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-display i{
+    font-size: 50px;
+    color: #596d3d;
+}
+}
