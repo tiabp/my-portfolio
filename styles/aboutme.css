@@ -112,6 +112,10 @@
     left: 150px;
 }
 
+.media-query {
+    display: none;
+}
+
 .professional-info p {
     top: 170px;
     font-size: 14px;
@@ -202,5 +206,129 @@
 .bottom-spacing {
     height: 100px;
 }
-
 /* CV STYLES ENDS HERE*/
+
+/* Apply media query on screens smaller than 720px */
+@media screen and (max-width: 770px) {
+    /* decrease project circle width on smaller screens */
+   .navigation-container {
+       top: 0;
+   }
+/* CV STYLES MEDIA QUERY STARTS HERE*/
+
+.cv-heading-container {
+    height: 225px;
+    top: 0;
+}
+
+.cv-heading h2 {
+    font-size: 50px;
+}
+
+.left-container {
+    width: 80%;
+    margin: auto;
+}
+
+.professional-photo {
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+}
+
+.professional-photo img {
+    position: absolute;
+    margin: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 200px;
+}
+
+.professional-info {
+    width: 70%;
+    height: auto;
+    margin: auto;
+    top: 400px;
+    text-align: center;
+    left: 20%;
+}
+
+.media-query {
+    display: block;
+}
+
+.professional-info p {
+    letter-spacing: 1px;
+    line-height: 24px;
+    width: 100%;
+    height: 30px;
+    text-align: left;
+}
+
+.about-me-blurb {
+    top: 580px;
+    left: 60%;
+    transform: translate(-20%, 0);
+    width: 220px;
+    font-size: 16px;
+}
+
+.skills-content {
+    top: 700px;
+    left: 20%;
+}
+
+.skills-content h2 {
+    font-weight: 500 ;
+}
+
+.skills-indent {
+    margin-left: 30px;
+}
+
+.right-container {
+    display: ;
+}
+
+.header-name h1{
+    display: none;
+}
+
+.work-experience {
+    top: 550px;
+    right: 18%;
+}
+
+.work-experience h2 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.company-title {
+    font-size: 20px;
+}
+
+.section-title {
+    margin-top: 20px;
+}
+
+.work-experience-content p {
+    line-height: 28px;
+}
+
+.work-experience-content a, .work-experience-content a:visited {
+    text-decoration: none;
+    font-style: italic;
+    color: #c47830;
+    display: block;
+}
+
+.work-experience-content a:hover {
+    color: #596d3d ;
+}
+
+.bottom-spacing {
+    height: 100px;
+}
+}
+  
